@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:text="Start"
         tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="495dp" />
+        tools:layout_editor_absoluteY="485dp" />
 
     <ImageView
         android:id="@+id/logoImg"
