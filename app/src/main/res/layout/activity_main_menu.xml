@@ -1,42 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainMenu">
+
+    <ImageView
+        android:id="@+id/transBufferMain1Img"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        app:srcCompat="@android:drawable/screen_background_light_transparent" />
 
     <TextView
         android:id="@+id/mainTitleText"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="COVID Tracker"
-        android:textSize="34sp"
-        tools:layout_editor_absoluteX="96dp"
-        tools:layout_editor_absoluteY="103dp" />
+        android:textAlignment="center"
+        android:textSize="34sp" />
+
+    <ImageView
+        android:id="@+id/transBufferMain2Img"
+        android:layout_width="match_parent"
+        android:layout_height="118dp"
+        app:srcCompat="@android:drawable/screen_background_light_transparent" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="slideshow goes here"
-        tools:layout_editor_absoluteX="141dp"
-        tools:layout_editor_absoluteY="308dp" />
+        android:textAlignment="center" />
+
+    <ImageView
+        android:id="@+id/transBufferMain3Img"
+        android:layout_width="match_parent"
+        android:layout_height="118dp"
+        app:srcCompat="@android:drawable/screen_background_light_transparent" />
 
     <Button
-        android:id="@+id/startBtn"
-        android:layout_width="wrap_content"
+        android:id="@+id/mainStartBtn"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Start"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="485dp" />
+        android:text="Start" />
+
+    <ImageView
+        android:id="@+id/transBufferMain4Img"
+        android:layout_width="match_parent"
+        android:layout_height="118dp"
+        app:srcCompat="@android:drawable/screen_background_light_transparent" />
 
     <ImageView
         android:id="@+id/logoImg"
         android:layout_width="82dp"
         android:layout_height="80dp"
-        tools:layout_editor_absoluteX="326dp"
-        tools:layout_editor_absoluteY="645dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:srcCompat="@drawable/smallapplogo" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

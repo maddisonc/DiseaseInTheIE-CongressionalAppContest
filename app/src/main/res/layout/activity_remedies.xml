@@ -1,41 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Remedies">
+
+    <ImageView
+        android:id="@+id/transBufferRemedies1Img"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        app:srcCompat="@android:drawable/screen_background_light_transparent" />
 
     <TextView
         android:id="@+id/remediesTitleText"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Remedies"
-        android:textSize="34sp"
-        tools:layout_editor_absoluteX="131dp"
-        tools:layout_editor_absoluteY="57dp" />
+        android:textAlignment="center"
+        android:textSize="34sp" />
+
+    <ImageView
+        android:id="@+id/transBufferRemedies1Img2"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        app:srcCompat="@android:drawable/screen_background_light_transparent" />
 
     <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
+        android:id="@+id/placeholderRemediesText"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="implement scrollview here"
-        tools:layout_editor_absoluteX="123dp"
-        tools:layout_editor_absoluteY="243dp" />
+        android:textAlignment="center" />
+
+    <ImageView
+        android:id="@+id/transBufferRemedies1Img3"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        app:srcCompat="@android:drawable/screen_background_light_transparent" />
 
     <Button
         android:id="@+id/backToSymptomsBtn"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Back"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="631dp" />
+        android:text="Back" />
+
+    <ImageView
+        android:id="@+id/transBufferRemedies1Img4"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        app:srcCompat="@android:drawable/screen_background_light_transparent" />
 
     <Button
         android:id="@+id/backToMainBtn"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Main Menu"
-        tools:layout_editor_absoluteX="258dp"
-        tools:layout_editor_absoluteY="631dp" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:text="Main Menu" />
+</LinearLayout>
