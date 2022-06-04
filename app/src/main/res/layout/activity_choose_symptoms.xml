@@ -9,12 +9,6 @@
 
     tools:context=".ChooseSymptoms">
 
-<!--    <ImageView-->
-<!--        android:id="@+id/transBufferSymptoms1Img"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="75dp"-->
-<!--        app:srcCompat="@android:drawable/screen_background_light_transparent" />-->
-
     <TextView
         android:id="@+id/chooseTitleText"
         android:layout_width="match_parent"
@@ -29,9 +23,9 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:background="#476c77"
-        android:textColor="@color/white"
+        android:onClick="feverClick"
         android:text="Fever"
-        />
+        android:textColor="@color/white" />
 
     <Button
         android:id="@+id/chillsBtn"
@@ -39,8 +33,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:background="#476c77"
-        android:textColor="@color/white"
-        android:text="Chills" />
+        android:onClick="chillsClick"
+        android:text="Chills"
+        android:textColor="@color/white" />
 
     <Button
         android:id="@+id/coughBtn"
@@ -48,8 +43,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:background="#476c77"
-        android:textColor="@color/white"
-        android:text="Cough" />
+        android:onClick="coughClick"
+        android:text="Cough"
+        android:textColor="@color/white" />
 
     <Button
         android:id="@+id/diffBreathBtn"
@@ -57,8 +53,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:background="#476c77"
-        android:textColor="@color/white"
-        android:text="Difficulty breathing" />
+        android:onClick="diffBreatheClick"
+        android:text="Difficulty breathing"
+        android:textColor="@color/white" />
 
     <Button
         android:id="@+id/fatigueBtn"
@@ -66,8 +63,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:background="#476c77"
-        android:textColor="@color/white"
-        android:text="Fatigue" />
+        android:onClick="fatigueClick"
+        android:text="Fatigue"
+        android:textColor="@color/white" />
 
     <Button
         android:id="@+id/achesBtn"
@@ -75,8 +73,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:background="#476c77"
-        android:textColor="@color/white"
-        android:text="Body aches" />
+        android:onClick="achesClick"
+        android:text="Body aches"
+        android:textColor="@color/white" />
 
     <Button
         android:id="@+id/lossBtn"
@@ -84,8 +83,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:background="#476c77"
-        android:textColor="@color/white"
-        android:text="loss of taste/smell" />
+        android:onClick="lossClick"
+        android:text="loss of taste/smell"
+        android:textColor="@color/white" />
 
     <Button
         android:id="@+id/soreThroatBtn"
@@ -93,8 +93,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:background="#476c77"
-        android:textColor="@color/white"
-        android:text="Sore throat" />
+        android:onClick="soreThroatClick"
+        android:text="Sore throat"
+        android:textColor="@color/white" />
 
     <Button
         android:id="@+id/congestionBtn"
@@ -102,8 +103,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:background="#476c77"
-        android:textColor="@color/white"
-        android:text="Congestion" />
+        android:onClick="congestionClick"
+        android:text="Congestion"
+        android:textColor="@color/white" />
 
     <Button
         android:id="@+id/toRemediesBtn"
