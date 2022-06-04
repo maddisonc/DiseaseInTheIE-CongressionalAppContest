@@ -21,20 +21,6 @@
         android:textAlignment="center"
         android:textSize="34sp" />
 
-    <!-- commented out temporary space buffers and placeholder text -->
-<!--    <ImageView-->
-<!--        android:id="@+id/transBufferMain2Img"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="118dp"-->
-<!--        app:srcCompat="@android:drawable/screen_background_light_transparent" />-->
-
-<!--    <TextView-->
-<!--        android:id="@+id/textView3"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="slideshow goes here"-->
-<!--        android:textAlignment="center" />-->
-
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewPager2"
         android:layout_width="match_parent"
@@ -42,26 +28,14 @@
         android:padding="20dp"
         android:paddingStart="20dp" />
 
-
-<!--    <ImageView-->
-<!--        android:id="@+id/transBufferMain3Img"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="118dp"-->
-<!--        app:srcCompat="@android:drawable/screen_background_light_transparent" />-->
-
     <Button
         android:id="@+id/mainStartBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Start"
         android:textColor="@color/white"
-        android:background="#244861"/>
-
-    <ImageView
-        android:id="@+id/transBufferMain4Img"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        app:srcCompat="@android:drawable/screen_background_light_transparent" />
+        android:background="#244861"
+        android:layout_marginBottom="100dp"/>
 
     <ImageView
         android:id="@+id/logoImg"

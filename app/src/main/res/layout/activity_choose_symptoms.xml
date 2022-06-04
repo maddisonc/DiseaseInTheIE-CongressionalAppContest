@@ -4,14 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     android:orientation="vertical"
+
     tools:context=".ChooseSymptoms">
 
-    <ImageView
-        android:id="@+id/transBufferSymptoms1Img"
-        android:layout_width="match_parent"
-        android:layout_height="75dp"
-        app:srcCompat="@android:drawable/screen_background_light_transparent" />
+<!--    <ImageView-->
+<!--        android:id="@+id/transBufferSymptoms1Img"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="75dp"-->
+<!--        app:srcCompat="@android:drawable/screen_background_light_transparent" />-->
 
     <TextView
         android:id="@+id/chooseTitleText"
@@ -19,26 +21,89 @@
         android:layout_height="wrap_content"
         android:text="Choose Symptoms"
         android:textAlignment="center"
-        android:textSize="34sp" />
+        android:textSize="34sp"
+        android:layout_marginBottom="20dp"/>
 
-    <ImageView
-        android:id="@+id/transBufferSymptoms2Img"
-        android:layout_width="match_parent"
-        android:layout_height="75dp"
-        app:srcCompat="@android:drawable/screen_background_light_transparent" />
-
-    <TextView
-        android:id="@+id/placeholderSymptomsText"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/feverBtn"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="implement scrollview here"
-        android:textAlignment="center" />
+        android:background="#476c77"
+        android:textColor="@color/white"
+        android:text="Fever"
+        />
 
-    <ImageView
-        android:id="@+id/transBufferSymptoms3Img"
-        android:layout_width="match_parent"
-        android:layout_height="75dp"
-        app:srcCompat="@android:drawable/screen_background_light_transparent" />
+    <Button
+        android:id="@+id/chillsBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#476c77"
+        android:textColor="@color/white"
+        android:text="Chills" />
+
+    <Button
+        android:id="@+id/coughBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#476c77"
+        android:textColor="@color/white"
+        android:text="Cough" />
+
+    <Button
+        android:id="@+id/diffBreathBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#476c77"
+        android:textColor="@color/white"
+        android:text="Difficulty breathing" />
+
+    <Button
+        android:id="@+id/fatigueBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#476c77"
+        android:textColor="@color/white"
+        android:text="Fatigue" />
+
+    <Button
+        android:id="@+id/achesBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#476c77"
+        android:textColor="@color/white"
+        android:text="Body aches" />
+
+    <Button
+        android:id="@+id/lossBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#476c77"
+        android:textColor="@color/white"
+        android:text="loss of taste/smell" />
+
+    <Button
+        android:id="@+id/soreThroatBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#476c77"
+        android:textColor="@color/white"
+        android:text="Sore throat" />
+
+    <Button
+        android:id="@+id/congestionBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#476c77"
+        android:textColor="@color/white"
+        android:text="Congestion" />
 
     <Button
         android:id="@+id/toRemediesBtn"
@@ -46,5 +111,6 @@
         android:layout_height="wrap_content"
         android:text="Next"
         android:textColor="@color/white"
-        android:background="#244861"/>
+        android:background="#244861"
+        android:layout_marginTop="20dp" />
 </LinearLayout>

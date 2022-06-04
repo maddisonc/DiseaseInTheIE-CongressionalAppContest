@@ -19,26 +19,17 @@
         android:layout_height="wrap_content"
         android:text="Remedies"
         android:textAlignment="center"
-        android:textSize="34sp" />
+        android:textSize="34sp"
+        android:layout_marginBottom="75dp"/>
 
-    <ImageView
-        android:id="@+id/transBufferRemedies1Img2"
-        android:layout_width="match_parent"
-        android:layout_height="75dp"
-        app:srcCompat="@android:drawable/screen_background_light_transparent" />
 
     <TextView
         android:id="@+id/placeholderRemediesText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="implement scrollview here"
-        android:textAlignment="center" />
-
-    <ImageView
-        android:id="@+id/transBufferRemedies1Img3"
-        android:layout_width="match_parent"
-        android:layout_height="75dp"
-        app:srcCompat="@android:drawable/screen_background_light_transparent" />
+        android:textAlignment="center"
+        android:layout_marginBottom="75dp"/>
 
     <Button
         android:id="@+id/backToSymptomsBtn"
@@ -46,13 +37,8 @@
         android:layout_height="wrap_content"
         android:text="Back"
         android:textColor="@color/white"
-        android:background="#244861" />
-
-    <ImageView
-        android:id="@+id/transBufferRemedies1Img4"
-        android:layout_width="match_parent"
-        android:layout_height="75dp"
-        app:srcCompat="@android:drawable/screen_background_light_transparent" />
+        android:background="#244861"
+        android:layout_marginBottom="100dp"/>
 
     <Button
         android:id="@+id/backToMainBtn"
