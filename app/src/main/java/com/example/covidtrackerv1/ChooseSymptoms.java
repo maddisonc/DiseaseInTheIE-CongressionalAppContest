@@ -9,10 +9,21 @@ import android.widget.Button;
 
 public class ChooseSymptoms extends AppCompatActivity {
 
+    private Button nextToRemediesBtn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choose_symptoms);
+
+        // initialize next button
+        nextToRemediesBtn = findViewById(R.id.toRemediesBtn);
+        nextToRemediesBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                configureToRemediesButton();
+            }
+        }); // listener that calls next activity method
     }
 
     private void configureToRemediesButton ()

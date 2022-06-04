@@ -9,10 +9,32 @@ import android.widget.Button;
 
 public class Remedies extends AppCompatActivity {
 
+    private Button backToSymptomsBtn;
+    private Button backToMainMenuBtn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_remedies);
+
+        // initialize backToSymptoms button
+        backToSymptomsBtn = findViewById(R.id.backToSymptomsBtn);
+        backToSymptomsBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                configureBackToSymptomsButton();
+            }
+        }); // listener that calls previous activity method
+
+        // initialize backToMain button
+        backToMainMenuBtn = findViewById(R.id.backToMainBtn);
+        backToMainMenuBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                configureBackToMainButton();
+            }
+        }); // listener that calls main menu activity method
+
     }
 
     private void configureBackToSymptomsButton ()
