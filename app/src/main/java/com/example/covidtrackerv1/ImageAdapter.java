@@ -14,7 +14,6 @@ import java.util.List;
 
 public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ImageViewHolder>
 {
-
     private List<Image> imageList;
     private ViewPager2 viewPager2;
 
@@ -22,24 +21,31 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ImageViewHol
     {
         this.imageList = imageList;
         this.viewPager2 = viewPager2;
-    }
+    } // end ImageAdapter constructor
 
     @NonNull
     @Override
     public ImageViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.image_container, parent, false);
         return new ImageViewHolder(view);
-    }
+    } // end initialization of ViewHolder
 
     @Override
     public void onBindViewHolder(@NonNull ImageViewHolder holder, int position) {
         holder.imageView.setImageResource(imageList.get(position).getImage());
-    }
+
+        // if current image is third from last, calls runnable that adds the previous
+        // images to end of list again, creating infinite slide effect
+        if (position == imageList.size() - 2)
+        {
+            viewPager2.post(runnable);
+        }
+    } // calls infinite scroll if end of list
 
     @Override
     public int getItemCount() {
         return imageList.size();
-    }
+    } // returns size of image list
 
     public class ImageViewHolder extends RecyclerView.ViewHolder
     {
@@ -49,5 +55,14 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ImageViewHol
 
             imageView = itemView.findViewById(R.id.imageView);
         }
-    }
-}
+    } // end imageViewHolder
+
+    private Runnable runnable = new Runnable() {
+        @Override
+        public void run() {
+            imageList.addAll(imageList);
+            notifyDataSetChanged();
+        }
+    }; // end runnable that adds all previous images to end of list for infinite scroll
+
+} // end ImageAdapter class (contains conditional to allow for infinite slide)

@@ -7,7 +7,7 @@ import android.os.Handler;
 
 public class MainActivity extends AppCompatActivity {
 
-    // code for splash screen
+    // handler for splash screen
     Handler h = new Handler();
 
     @Override
@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity((i));
                 finish();
             }
-        }, 5000);
-    }
-}
+        }, 5000); // end splashScreen code
+
+    } // end onCreate method
+} // end MainActivity class

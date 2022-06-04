@@ -17,10 +17,11 @@
         android:id="@+id/mainTitleText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="COVID Tracker"
+        android:text="COVID-19 Symptom Tracker"
         android:textAlignment="center"
         android:textSize="34sp" />
 
+    <!-- commented out temporary space buffers and placeholder text -->
 <!--    <ImageView-->
 <!--        android:id="@+id/transBufferMain2Img"-->
 <!--        android:layout_width="match_parent"-->
@@ -52,12 +53,14 @@
         android:id="@+id/mainStartBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Start" />
+        android:text="Start"
+        android:textColor="@color/white"
+        android:background="#244861"/>
 
     <ImageView
         android:id="@+id/transBufferMain4Img"
         android:layout_width="match_parent"
-        android:layout_height="118dp"
+        android:layout_height="100dp"
         app:srcCompat="@android:drawable/screen_background_light_transparent" />
 
     <ImageView

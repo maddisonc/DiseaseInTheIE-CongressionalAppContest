@@ -18,6 +18,9 @@ import java.util.List;
 
 public class MainMenu extends AppCompatActivity {
 
+    private Button startBtn;
+
+    // slideshow variables
     private ViewPager2 viewPager2;
     private List<Image> imageList;
     private ImageAdapter adapter;
@@ -27,9 +30,20 @@ public class MainMenu extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
 
+        // initialize start button
+        startBtn = findViewById(R.id.mainStartBtn);
+        startBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                configureStartButton();
+            }
+        }); // listener that calls next activity method
+
+        // start of slideshow code
         viewPager2 = findViewById(R.id.viewPager2);
         imageList = new ArrayList<>();
 
@@ -91,18 +105,10 @@ public class MainMenu extends AppCompatActivity {
         sliderHandler.postDelayed(sliderRunnable, 2000);
     } // end user comes back to app, resumes slide
 
-    private void configureStartButton ()
+    public void configureStartButton ()
     {
-        Button nextButton = (Button) findViewById(R.id.mainStartBtn);
-        nextButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick (View v)
-            {
-                startActivity(new Intent(MainMenu.this, ChooseSymptoms.class));
-            }
-        });
-    } // end start button handler
+        Intent intent = new Intent(this, ChooseSymptoms.class);
+        startActivity(intent);
+    } // end start button handler (goes to next screen when start is pressed)
 
-
-
-}
+} // end MainMenu class
