@@ -114,7 +114,10 @@ public class Remedies extends AppCompatActivity {
         }
 
         // prints out specific treatment for each symptom
-        remedies += "\n";
+        if (symptomsCount > 0)
+        {
+            remedies += "\n\nRemedies: \n";
+        }
         String symptom = "";
         for (int i = 0; i < symptomsIndexArr.length; i++)
         {

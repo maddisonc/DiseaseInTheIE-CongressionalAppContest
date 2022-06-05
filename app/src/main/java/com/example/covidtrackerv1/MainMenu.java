@@ -49,10 +49,10 @@ public class MainMenu extends AppCompatActivity {
 
         // adds images to list for slideshow
         // (images not in numerical order for aesthetics)
-        imageList.add(new Image(R.drawable.covid1));
-        imageList.add(new Image(R.drawable.covid3));
-        imageList.add(new Image(R.drawable.covid2));
-        imageList.add(new Image(R.drawable.covid4));
+        imageList.add(new Image(R.drawable.slide1));
+        imageList.add(new Image(R.drawable.slide2));
+        imageList.add(new Image(R.drawable.slide3));
+        imageList.add(new Image(R.drawable.slide4));
 
         adapter = new ImageAdapter(imageList, viewPager2);
         viewPager2.setAdapter(adapter);
