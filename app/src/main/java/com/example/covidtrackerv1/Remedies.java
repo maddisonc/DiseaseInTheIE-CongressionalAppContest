@@ -60,6 +60,7 @@ public class Remedies extends AppCompatActivity {
             @Override
             public void onClick (View v)
             {
+                ChooseSymptoms.setSymptomsIndexList();
                 startActivity(new Intent(Remedies.this, ChooseSymptoms.class));
             }
         });

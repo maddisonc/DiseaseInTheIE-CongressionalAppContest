@@ -19,21 +19,24 @@
 
     <Button
         android:id="@+id/backToSymptomsBtn"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Back"
-        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
         android:background="#244861"
-        android:layout_marginBottom="30dp"/>
+        android:gravity="center"
+        android:text="Restart (Deletes Chosen Symptoms)"
+        android:textColor="@color/white" />
 
     <Button
         android:id="@+id/backToMainBtn"
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="Main Menu"
-        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
         android:background="#244861"
-        android:layout_marginBottom="30dp"/>
+        android:text="Main Menu"
+        android:textColor="@color/white" />
 
     <!-- ScrollView for list of remedies -->
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"

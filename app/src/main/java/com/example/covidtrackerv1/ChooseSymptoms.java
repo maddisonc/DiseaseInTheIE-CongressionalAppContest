@@ -116,4 +116,11 @@ public class ChooseSymptoms extends AppCompatActivity {
         return symptomsStringList;
     }
 
+    public static void setSymptomsIndexList ()
+    {
+        for (int i = 0; i < symptomsIndexList.length; i++)
+        {
+            symptomsIndexList[i] = 0;
+        }
+    }
 } // end ChooseSymptomsClass
