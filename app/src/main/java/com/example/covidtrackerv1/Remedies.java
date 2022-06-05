@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 public class Remedies extends AppCompatActivity {
 
     private Button backToSymptomsBtn;
@@ -83,14 +85,18 @@ public class Remedies extends AppCompatActivity {
         int[] symptomsIndexArr = ChooseSymptoms.getSymptomsIndexList();
         String[] symptomsNameArr = ChooseSymptoms.getSymptomsStringList();
 
+        // new arraylist to hold the names of only chosen symptoms
+        ArrayList<String> chosenSymptoms = new ArrayList<>();
+
         TextView remediesTextView = (TextView) findViewById(R.id.scrollViewText);
 
-        // for loop that prints out the symptoms that the user chose
+        // for loop that prints out the symptoms that the user chose, adds these symptoms to the ArrayList
         for (int i = 0; i < symptomsIndexArr.length; i++)
         {
             if (symptomsIndexArr[i] == 1)
             {
                 symptomsCount++;
+                chosenSymptoms.add(symptomsNameArr[i]);
             }
         }
 
@@ -100,7 +106,7 @@ public class Remedies extends AppCompatActivity {
         // if the user selected at least one symptom
         if (symptomsCount > 0) {
             remedies += "\nYou are experiencing: ";
-            for (String a : symptomsNameArr)
+            for (String a : chosenSymptoms)
             {
                 remedies += "\n" + a;
             }
@@ -121,11 +127,11 @@ public class Remedies extends AppCompatActivity {
         // outputs the amount of days the user should isolate based on number of symptoms
         if (symptomsCount >= 1)
         {
-            remedies += "\nYou should isolate for at least five days from the date your symptoms began.";
+            remedies += "\nYou should isolate for at least five days from the date your symptoms began.\n";
         }
         else if (symptomsCount == 0)
         {
-            remedies += "\nYou are not experiencing COVID-19 symptoms.";
+            remedies += "\nYou are not experiencing COVID-19 symptoms.\n";
         }
 
         remediesTextView.setText(remedies);
