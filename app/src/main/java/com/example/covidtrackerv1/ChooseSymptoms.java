@@ -14,8 +14,9 @@ public class ChooseSymptoms extends AppCompatActivity {
 
     // order of symptoms: fever (0), chills (1), cough (2), difficulty breathing (3), fatigue (4),
     //                    body aches (5), loss of taste/smell (6), sore throat (7), congestion (8)
-    public int[] symptomsIndexList = new int[9];
-    String[] symptomsStringList = {"fever", "chills", "cough", "difficulty breathing", "fatigue", "body aches", "loss of taste/smell", "sore throat", "congestion"};
+    public static int[] symptomsIndexList = new int[9];
+    public static String[] symptomsStringList = {"Fever", "Chills", "Cough", "Difficulty breathing", "Fatigue",
+                                "Body aches", "Loss of taste/smell", "Sore throat", "Congestion"};
     String[] printOutList = new String [symptomsIndexList.length];
 
     @Override
@@ -102,5 +103,17 @@ public class ChooseSymptoms extends AppCompatActivity {
     {
         symptomsIndexList[8] = 1;
     } // end congestion button handler
+
+    // getter for symptom frequency
+    public static int[] getSymptomsIndexList ()
+    {
+        return symptomsIndexList;
+    }
+
+    // getter for symptom strings
+    public static String[] getSymptomsStringList ()
+    {
+        return symptomsStringList;
+    }
 
 } // end ChooseSymptomsClass

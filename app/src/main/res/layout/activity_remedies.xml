@@ -7,12 +7,6 @@
     android:orientation="vertical"
     tools:context=".Remedies">
 
-    <ImageView
-        android:id="@+id/transBufferRemedies1Img"
-        android:layout_width="match_parent"
-        android:layout_height="75dp"
-        app:srcCompat="@android:drawable/screen_background_light_transparent" />
-
     <TextView
         android:id="@+id/remediesTitleText"
         android:layout_width="match_parent"
@@ -20,16 +14,8 @@
         android:text="Remedies"
         android:textAlignment="center"
         android:textSize="34sp"
-        android:layout_marginBottom="75dp"/>
-
-
-    <TextView
-        android:id="@+id/placeholderRemediesText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="implement scrollview here"
-        android:textAlignment="center"
-        android:layout_marginBottom="75dp"/>
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
 
     <Button
         android:id="@+id/backToSymptomsBtn"
@@ -38,7 +24,7 @@
         android:text="Back"
         android:textColor="@color/white"
         android:background="#244861"
-        android:layout_marginBottom="100dp"/>
+        android:layout_marginBottom="30dp"/>
 
     <Button
         android:id="@+id/backToMainBtn"
@@ -46,5 +32,23 @@
         android:layout_height="wrap_content"
         android:text="Main Menu"
         android:textColor="@color/white"
-        android:background="#244861"/>
+        android:background="#244861"
+        android:layout_marginBottom="30dp"/>
+
+    <!-- ScrollView for list of remedies -->
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/scrollViewText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp">
+        </TextView>
+
+    </ScrollView>
+
 </LinearLayout>
