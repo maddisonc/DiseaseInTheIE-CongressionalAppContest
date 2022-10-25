@@ -10,9 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.COVIDTrackerV1">
         <activity
-            android:name=".Remedies"
-            android:exported="false" />
-        <activity
             android:name=".ChooseSymptoms"
             android:exported="false" />
         <activity
