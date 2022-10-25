@@ -28,6 +28,13 @@ public class ChooseSymptoms extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void menClick(View v)
+    {
+        Intent intent = new Intent(this, menScreen.class);
+        startActivity(intent);
+    }
+
+
 
 
 } // end ChooseSymptomsClass

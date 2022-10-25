@@ -1,4 +1,14 @@
 package com.example.covidtrackerv1;
 
-public class menScreen {
+import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+public class menScreen extends AppCompatActivity
+{
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_men);
+    }//end onCreate
 }
