@@ -21,6 +21,9 @@
         <activity
             android:name=".menScreen"
             android:exported="false" />
+        <activity
+            android:name=".TubScreen"
+            android:exported="false" />
 
         <activity
             android:name=".MainMenu"

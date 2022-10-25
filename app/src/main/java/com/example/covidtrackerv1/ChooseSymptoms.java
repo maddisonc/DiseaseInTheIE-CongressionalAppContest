@@ -34,6 +34,12 @@ public class ChooseSymptoms extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void tubClick(View v)
+    {
+        Intent intent = new Intent(this, TubScreen.class);
+        startActivity(intent);
+    }
+
 
 
 
