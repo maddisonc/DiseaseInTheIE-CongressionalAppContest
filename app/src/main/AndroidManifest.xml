@@ -13,6 +13,12 @@
             android:name=".ChooseSymptoms"
             android:exported="false" />
         <activity
+            android:name=".hepScreen"
+            android:exported="false" />
+        <activity
+            android:name=".whoopScreen"
+            android:exported="false" />
+        <activity
             android:name=".MainMenu"
             android:exported="false" />
         <activity

@@ -16,6 +16,18 @@ public class ChooseSymptoms extends AppCompatActivity {
         setContentView(R.layout.activity_choose_symptoms);
     }//end onCreate
 
+    public void hepClick(View v)
+    {
+        Intent intent = new Intent(this, hepScreen.class);
+        startActivity(intent);
+    }//end hepClick
+
+    public void whoopClick(View v)
+    {
+        Intent intent = new Intent(this, whoopScreen.class);
+        startActivity(intent);
+    }
+
 
 
 } // end ChooseSymptomsClass
