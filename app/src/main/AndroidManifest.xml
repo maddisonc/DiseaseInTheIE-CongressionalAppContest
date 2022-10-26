@@ -22,9 +22,11 @@
             android:name=".menScreen"
             android:exported="false" />
         <activity
-            android:name=".TubScreen"
+            android:name=".tubScreen"
             android:exported="false" />
-
+        <activity
+            android:name=".measScreen"
+            android:exported="false" />
         <activity
             android:name=".MainMenu"
             android:exported="false" />

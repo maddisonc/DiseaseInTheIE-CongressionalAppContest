@@ -4,7 +4,7 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class TubScreen extends AppCompatActivity
+public class tubScreen extends AppCompatActivity
 {
     @Override
     protected void onCreate(Bundle savedInstanceState) {

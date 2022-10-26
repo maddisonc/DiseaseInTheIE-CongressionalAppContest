@@ -4,9 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 
 public class ChooseSymptoms extends AppCompatActivity {
 
@@ -36,11 +34,15 @@ public class ChooseSymptoms extends AppCompatActivity {
 
     public void tubClick(View v)
     {
-        Intent intent = new Intent(this, TubScreen.class);
+        Intent intent = new Intent(this, tubScreen.class);
         startActivity(intent);
     }
 
-
+    public void measClick(View v)
+    {
+        Intent intent = new Intent(this, measScreen.class);
+        startActivity(intent);
+    }
 
 
 } // end ChooseSymptomsClass
