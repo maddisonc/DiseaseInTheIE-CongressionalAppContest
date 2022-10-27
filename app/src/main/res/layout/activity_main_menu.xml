@@ -15,11 +15,11 @@
         android:layout_marginTop="20dp"
         android:layout_marginBottom="50dp"
         android:fontFamily="@font/milkhoney"
-        android:text="IEDisease"
         android:textAlignment="center"
         android:textColor="#1D1E2C"
         android:textSize="40sp"
-        android:typeface="monospace" />
+        android:text="Disease in the Inland Empire"
+       />
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewPager2"
@@ -49,6 +49,6 @@
         android:layout_width="123dp"
         android:layout_height="106dp"
         android:layout_gravity="center"
-        app:srcCompat="@drawable/purplelogo" />
+        app:srcCompat="@drawable/caclogo" />
 
 </LinearLayout>

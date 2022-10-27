@@ -16,11 +16,10 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:fontFamily="@font/milkhoney"
-        android:text="Choose Symptoms"
+        android:text="Choose Disease"
         android:textAlignment="center"
         android:textColor="#1D1E2C"
-        android:textSize="40sp"
-        android:typeface="monospace" />
+        android:textSize="40sp" />
 
 
     <TextView
