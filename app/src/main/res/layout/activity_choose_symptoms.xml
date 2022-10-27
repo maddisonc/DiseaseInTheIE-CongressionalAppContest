@@ -15,10 +15,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
+        android:fontFamily="@font/MilkyHoney"
         android:text="Choose Symptoms"
         android:textAlignment="center"
-        android:textColor="@color/darkpurple"
-        android:textSize="34sp"
+        android:textColor="#1D1E2C"
+        android:textSize="40sp"
         android:typeface="monospace" />
 
 
@@ -33,9 +34,12 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:background="@drawable/button"
+        android:backgroundTint="#DDBDD5"
+        android:fontFamily="@font/lazydog"
         android:onClick="hepClick"
         android:text="Hepatitus A"
-        android:textColor="@color/white"
+        android:textColor="#1D1E2C"
+        android:textSize="20sp"
         android:typeface="monospace" />
 
     <Button
@@ -44,9 +48,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:background="@drawable/button"
+        android:backgroundTint="#DDBDD5"
+        android:fontFamily="@font/lazydog"
         android:onClick="whoopClick"
         android:text="Whooping Cough"
-        android:textColor="@color/white"
+        android:textColor="#1D1E2C"
+        android:textSize="20sp"
         android:typeface="monospace" />
 
     <Button
@@ -55,9 +62,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:background="@drawable/button"
+        android:backgroundTint="#DDBDD5"
+        android:fontFamily="@font/lazydog"
         android:onClick="menClick"
         android:text="Meningococcal Disease"
-        android:textColor="@color/white"
+        android:textColor="#1D1E2C"
+        android:textSize="20sp"
         android:typeface="monospace" />
 
     <Button
@@ -66,9 +76,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:background="@drawable/button"
+        android:backgroundTint="#DDBDD5"
+        android:fontFamily="@font/lazydog"
         android:onClick="tubClick"
         android:text="Tuberculosis"
-        android:textColor="@color/white"
+        android:textColor="#1D1E2C"
+        android:textSize="20sp"
         android:typeface="monospace" />
 
     <Button
@@ -77,9 +90,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:background="@drawable/button"
+        android:backgroundTint="#DDBDD5"
+        android:fontFamily="@font/lazydog"
         android:onClick="measClick"
         android:text="Measles"
-        android:textColor="@color/white"
+        android:textColor="#1D1E2C"
+        android:textSize="20sp"
         android:typeface="monospace" />
 
     <TextView
