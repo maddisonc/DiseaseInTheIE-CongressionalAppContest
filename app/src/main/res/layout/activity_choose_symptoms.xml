@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
-        android:text="Choose Symptoms"
+        android:text="Choose Disease"
         android:textAlignment="center"
         android:textColor="@color/darkpurple"
         android:textSize="34sp"
