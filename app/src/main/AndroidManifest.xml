@@ -10,10 +10,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.COVIDTrackerV1">
         <activity
-            android:name=".Remedies"
+            android:name=".ChooseSymptoms"
             android:exported="false" />
         <activity
-            android:name=".ChooseSymptoms"
+            android:name=".hepScreen"
+            android:exported="false" />
+        <activity
+            android:name=".whoopScreen"
+            android:exported="false" />
+        <activity
+            android:name=".menScreen"
+            android:exported="false" />
+        <activity
+            android:name=".tubScreen"
+            android:exported="false" />
+        <activity
+            android:name=".measScreen"
             android:exported="false" />
         <activity
             android:name=".MainMenu"
