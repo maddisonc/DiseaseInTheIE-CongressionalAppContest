@@ -4,10 +4,16 @@
     android:layout_height="match_parent"
     android:background="#F7EBEC">
 
-    <TextView
-        android:id="@+id/randomWhoopView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Welcome to the Whooping Cough Page" />
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barchart"
+        android:layout_width="match_parent"
+        android:layout_height="550dp">
+    </com.github.mikephil.charting.charts.BarChart>
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Back to selection screen"
+        android:onClick="backClick"/>
 </LinearLayout>
