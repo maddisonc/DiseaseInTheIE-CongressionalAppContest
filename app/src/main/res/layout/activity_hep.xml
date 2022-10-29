@@ -1,20 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="16dp"
-    android:paddingTop="16dp"
-    android:paddingRight="16dp"
-    android:paddingBottom="16dp"
     android:background="#F7EBEC"
     android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/hepMainTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="@font/milkhoney"
+        android:textAlignment="center"
+        android:textColor="#1D1E2C"
+        android:textSize="20sp"
+        android:text="Hepatitis A"
+        />
 
     <com.github.mikephil.charting.charts.BarChart
         android:id="@+id/barchart"
         android:layout_width="match_parent"
-        android:layout_height="600dp">
+        android:layout_height="550dp">
     </com.github.mikephil.charting.charts.BarChart>
 
     <Button

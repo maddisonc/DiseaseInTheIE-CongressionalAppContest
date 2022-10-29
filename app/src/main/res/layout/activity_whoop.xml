@@ -5,10 +5,24 @@
     android:background="#F7EBEC"
     android:orientation="vertical">
 
+    <TextView
+        android:id="@+id/whoopMainTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="@font/milkhoney"
+        android:textAlignment="center"
+        android:textColor="#1D1E2C"
+        android:textSize="20sp"
+        android:text="Whooping Cough"
+        />
+
     <com.github.mikephil.charting.charts.BarChart
         android:id="@+id/barchart"
         android:layout_width="match_parent"
-        android:layout_height="600dp"></com.github.mikephil.charting.charts.BarChart>
+        android:layout_height="550dp">
+    </com.github.mikephil.charting.charts.BarChart>
 
     <Button
         android:id="@+id/backBtn"
@@ -17,8 +31,8 @@
         android:background="@drawable/button"
         android:backgroundTint="#DDBDD5"
         android:fontFamily="@font/lazydog"
-        android:onClick="backClick"
         android:text="Back to selection screen"
+        android:onClick="backClick"
         android:textColor="#1D1E2C"
         android:textSize="20sp"
         android:typeface="monospace"/>

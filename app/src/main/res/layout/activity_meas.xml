@@ -5,10 +5,23 @@
     android:background="#F7EBEC"
     android:orientation="vertical">
 
+    <TextView
+        android:id="@+id/measMainTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="@font/milkhoney"
+        android:textAlignment="center"
+        android:textColor="#1D1E2C"
+        android:textSize="20sp"
+        android:text="Measles"
+        />
+
     <com.github.mikephil.charting.charts.BarChart
         android:id="@+id/barchart"
         android:layout_width="match_parent"
-        android:layout_height="600dp">
+        android:layout_height="550dp">
     </com.github.mikephil.charting.charts.BarChart>
 
     <Button

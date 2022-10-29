@@ -40,7 +40,7 @@ public class whoopScreen extends AppCompatActivity
         BarData data = new BarData(labels, bardataset);
         barChart.setData(data);
 
-        barChart.setDescription("Whooping Cough cases in 2019");
+        barChart.setDescription("");
 
         bardataset.setColors(ColorTemplate.COLORFUL_COLORS);
         barChart.animateY(3000);

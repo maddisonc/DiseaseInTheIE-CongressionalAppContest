@@ -1,6 +1,8 @@
 package com.example.covidtrackerv1;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -38,9 +40,14 @@ public class menScreen extends AppCompatActivity
         BarData data = new BarData(labels, bardataset);
         barChart.setData(data);
 
-        barChart.setDescription("Meningococcal Disease cases in 2019");
+        barChart.setDescription("");
 
         bardataset.setColors(ColorTemplate.COLORFUL_COLORS);
         barChart.animateY(3000);
     }//end onCreate
+    public void backClick(View v)
+    {
+        Intent intent = new Intent(this, ChooseSymptoms.class);
+        startActivity(intent);
+    }
 }
