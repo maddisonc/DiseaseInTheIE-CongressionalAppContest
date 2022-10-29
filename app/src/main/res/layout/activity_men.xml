@@ -5,9 +5,22 @@
     android:background="#F7EBEC"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/randomMenView"
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barchart"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Welcome to the Meningococcal Disease page" />
+        android:layout_height="600dp">
+    </com.github.mikephil.charting.charts.BarChart>
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/button"
+        android:backgroundTint="#DDBDD5"
+        android:fontFamily="@font/lazydog"
+        android:text="Back to selection screen"
+        android:onClick="backClick"
+        android:textColor="#1D1E2C"
+        android:textSize="20sp"
+        android:typeface="monospace"/>
 </LinearLayout>

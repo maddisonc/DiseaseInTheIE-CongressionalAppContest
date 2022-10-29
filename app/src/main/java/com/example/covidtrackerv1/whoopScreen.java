@@ -1,6 +1,8 @@
 package com.example.covidtrackerv1;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -44,5 +46,9 @@ public class whoopScreen extends AppCompatActivity
         barChart.animateY(3000);
     }//end onCreate
 
-
+    public void backClick(View v)
+    {
+        Intent intent = new Intent(this, ChooseSymptoms.class);
+        startActivity(intent);
+    }
 }

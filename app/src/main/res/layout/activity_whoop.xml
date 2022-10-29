@@ -2,18 +2,24 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F7EBEC">
+    android:background="#F7EBEC"
+    android:orientation="vertical">
 
     <com.github.mikephil.charting.charts.BarChart
         android:id="@+id/barchart"
         android:layout_width="match_parent"
-        android:layout_height="550dp">
-    </com.github.mikephil.charting.charts.BarChart>
+        android:layout_height="600dp"></com.github.mikephil.charting.charts.BarChart>
 
     <Button
         android:id="@+id/backBtn"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/button"
+        android:backgroundTint="#DDBDD5"
+        android:fontFamily="@font/lazydog"
+        android:onClick="backClick"
         android:text="Back to selection screen"
-        android:onClick="backClick"/>
+        android:textColor="#1D1E2C"
+        android:textSize="20sp"
+        android:typeface="monospace"/>
 </LinearLayout>
