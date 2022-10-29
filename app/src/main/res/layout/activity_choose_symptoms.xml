@@ -4,127 +4,103 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F7EBEC"
     android:gravity="center"
-    android:orientation="vertical"
 
+    android:orientation="vertical"
     tools:context=".ChooseSymptoms">
 
     <TextView
         android:id="@+id/chooseTitleText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Choose Symptoms"
-        android:typeface="monospace"
-        android:textColor="@color/darkpurple"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/milkhoney"
+        android:text="Choose Disease"
         android:textAlignment="center"
-        android:textSize="34sp"
-        android:layout_marginBottom="20dp"/>
+        android:textColor="#1D1E2C"
+        android:textSize="40sp" />
 
-    <Button
-        android:id="@+id/feverBtn"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/button"
-        android:onClick="feverClick"
-        android:text="Fever"
-        android:typeface="monospace"
-        android:textColor="@color/white" />
 
-    <Button
-        android:id="@+id/chillsBtn"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/button"
-        android:onClick="chillsClick"
-        android:text="Chills"
-        android:typeface="monospace"
-        android:textColor="@color/white" />
-
-    <Button
-        android:id="@+id/coughBtn"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/button"
-        android:onClick="coughClick"
-        android:text="Cough"
-        android:typeface="monospace"
-        android:textColor="@color/white" />
-
-    <Button
-        android:id="@+id/diffBreathBtn"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/button"
-        android:onClick="diffBreatheClick"
-        android:text="Difficulty breathing"
-        android:typeface="monospace"
-        android:textColor="@color/white" />
-
-    <Button
-        android:id="@+id/fatigueBtn"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/button"
-        android:onClick="fatigueClick"
-        android:text="Fatigue"
-        android:typeface="monospace"
-        android:textColor="@color/white" />
-
-    <Button
-        android:id="@+id/achesBtn"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/button"
-        android:onClick="achesClick"
-        android:text="Body aches"
-        android:typeface="monospace"
-        android:textColor="@color/white" />
-
-    <Button
-        android:id="@+id/lossBtn"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/button"
-        android:onClick="lossClick"
-        android:text="loss of taste/smell"
-        android:typeface="monospace"
-        android:textColor="@color/white" />
-
-    <Button
-        android:id="@+id/soreThroatBtn"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/button"
-        android:onClick="soreThroatClick"
-        android:text="Sore throat"
-        android:typeface="monospace"
-        android:textColor="@color/white" />
-
-    <Button
-        android:id="@+id/congestionBtn"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/button"
-        android:onClick="congestionClick"
-        android:text="Congestion"
-        android:typeface="monospace"
-        android:textColor="@color/white" />
-
-    <Button
-        android:id="@+id/toRemediesBtn"
+    <TextView
+        android:id="@+id/blank1"
         android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="" />
+
+    <Button
+        android:id="@+id/hepBtn"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="Next"
-        android:textColor="@color/white"
         android:background="@drawable/button"
-        android:typeface="monospace"
-        android:layout_marginTop="20dp" />
+        android:backgroundTint="#DDBDD5"
+        android:fontFamily="@font/lazydog"
+        android:onClick="hepClick"
+        android:text="Hepatitus A"
+        android:textColor="#1D1E2C"
+        android:textSize="20sp"
+        android:typeface="monospace" />
+
+    <Button
+        android:id="@+id/whoopBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button"
+        android:backgroundTint="#DDBDD5"
+        android:fontFamily="@font/lazydog"
+        android:onClick="whoopClick"
+        android:text="Whooping Cough"
+        android:textColor="#1D1E2C"
+        android:textSize="20sp"
+        android:typeface="monospace" />
+
+    <Button
+        android:id="@+id/menBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button"
+        android:backgroundTint="#DDBDD5"
+        android:fontFamily="@font/lazydog"
+        android:onClick="menClick"
+        android:text="Meningococcal Disease"
+        android:textColor="#1D1E2C"
+        android:textSize="20sp"
+        android:typeface="monospace" />
+
+    <Button
+        android:id="@+id/tubBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button"
+        android:backgroundTint="#DDBDD5"
+        android:fontFamily="@font/lazydog"
+        android:onClick="tubClick"
+        android:text="Tuberculosis"
+        android:textColor="#1D1E2C"
+        android:textSize="20sp"
+        android:typeface="monospace" />
+
+    <Button
+        android:id="@+id/measBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button"
+        android:backgroundTint="#DDBDD5"
+        android:fontFamily="@font/lazydog"
+        android:onClick="measClick"
+        android:text="Measles"
+        android:textColor="#1D1E2C"
+        android:textSize="20sp"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/blank2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="" />
+
 </LinearLayout>
